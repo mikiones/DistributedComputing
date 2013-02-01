@@ -11,3 +11,15 @@
 *.lai
 *.la
 *.a
+
+#emacs
+*.~*~
+\#*\#
+
+# Emacs backups of hidden files, like ".gitignore.~3~"
+.*.~*~
+.\#*
+
+# playground to test things 
+
+\playground
