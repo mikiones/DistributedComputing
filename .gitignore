@@ -34,3 +34,5 @@ Makefile
 cmake_install.cmake
 install_manifest.txt
 .gitignore~
+
+include/TestConfig.h
