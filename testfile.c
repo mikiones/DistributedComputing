@@ -13,11 +13,8 @@ main()
 	int		whatevet;
 
 
-	int		a
-	               ;
+	int		a;
 	int		b;
 	int		c;
-	printf("lol"
-	       ,1
-	       ,2, 3, 4);
+	printf("lol", 1, 2, 3, 4);
 }
