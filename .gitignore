@@ -43,3 +43,13 @@ include/TestConfig.h
 *.c~
 
 *.BAK
+
+*.txt~
+
+*.in~
+
+*.h~
+
+src/libs/GitSHA1/GitSHA1.cpp
+
+*.cxx~

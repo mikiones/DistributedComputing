@@ -5,6 +5,12 @@ project (DistributedComputing)
 set (Test_VERSION_MAJOR 1)
 set (Test_VERSION_MINOR 0)
 
+
+# geting the git version to stamp files
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake-modules/")
+include(GetGitRevisionDescription)
+get_git_head_revision(GIT_REFSPEC GIT_SHA1)
+
 # configure a header file to pass some of the CMake settings
 # to the source code
 configure_file (
@@ -13,6 +19,8 @@ configure_file (
   )
 # add the binary tree to the search path for include files
 # so that we will find TutorialConfig.h
-include_directories("${PROJECT_BINARY_DIR}/include/")
 
-add_executable(Test  ${PROJECT_SOURCE_DIR}/src/test/test.cxx)
+include_directories ("${PROJECT_BINARY_DIR}/include/")
+include_directories ("src/libs/GitSHA1")
+add_subdirectory(src/libs/GitSHA1)
+add_subdirectory(src/test)
