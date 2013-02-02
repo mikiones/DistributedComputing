@@ -1,1 +1,1 @@
-*.c     filter=indent -kr
+*.c     filter=indent
