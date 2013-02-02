@@ -24,4 +24,13 @@
 
 \playground
 
+#ignoring MacOs ceche files
 .DS_Store
+
+#ignoring junk produced on build process by cmake
+CMakeCache.txt
+CMakeFiles
+Makefile
+cmake_install.cmake
+install_manifest.txt
+.gitignore~
