@@ -3,7 +3,7 @@
 int 
 main()
 {
-
+	int		whatevet;
 
 
 	int		a
