@@ -10,6 +10,8 @@ test()
 int 
 main()
 {
+	int		another;
+
 	int		whatevet;
 
 
