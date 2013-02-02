@@ -41,3 +41,5 @@ install_manifest.txt
 include/TestConfig.h
 
 *.c~
+
+*.BAK
