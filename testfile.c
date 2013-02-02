@@ -1,22 +1,24 @@
 #include <stdlib.h>
 
 
-int 
-test()
+int test()
 {
-	return 0;
+    return 0;
 }
 
-int 
-main()
+int main()
 {
-	int		another;
+    int another;
 
-	int		whatevet;
+    int whatevet;
 
 
-	int		a;
-	int		b;
-	int		c;
+    int a;
+    int b;
+    int c;
+
+    if (a == b)
 	printf("lol", 1, 2, 3, 4);
+    else
+	printf("lese lol", 1, 2, 3, 4);
 }
