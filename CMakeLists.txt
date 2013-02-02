@@ -15,4 +15,4 @@ configure_file (
 # so that we will find TutorialConfig.h
 include_directories("${PROJECT_BINARY_DIR}/include/")
 
-add_executable(Test  ${PROJECT_SOURCE_DIR}/src/test.cxx)
+add_executable(Test  ${PROJECT_SOURCE_DIR}/src/test/test.cxx)
