@@ -1,1 +1,4 @@
 *.c     filter=indent
+*.h     filter=indent
+*.cxx     filter=indent
+*.cpp     filter=indent
