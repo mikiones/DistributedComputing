@@ -1,19 +1,19 @@
 /* Testing the jit execution */
 /* constructing code::
 
-   int add1f(int i)
-   {
-     return i+1;
-   }
-   int foo()
-   {
-     return add1f(10)
-   }
-*/
+ int add1f(int i)
+ {
+ return i+1;
+ }
+ int foo()
+ {
+ return add1f(10)
+ }
+ */
 
 /*
-  and executing it using JIT
-*/
+ and executing it using JIT
+ */
 
 /* llvm headers for jit */
 
@@ -40,6 +40,9 @@
 #include <llvm/PassManager.h>
 #include <llvm/Analysis/Verifier.h>
 #include <llvm/Assembly/PrintModulePass.h>
+
+/*rwiting / reading code*/
+#include <llvm/Bitcode/ReaderWriter.h>
 
 using namespace llvm;
 
@@ -102,6 +105,8 @@ bb = BasicBlock: :Create(con, "EntryBlock", f_foo);
 
     ExecutionEngine *EE = EngineBuilder(mo).create();
     outs() << "created module: \n\n" << *mo;
+    outs() << "Bitcode : \n\n";
+    WriteBitcodeToFile(mo, outs());
     outs() << "\n\n runing foo: ";
     outs().flush();
 
