@@ -40,6 +40,5 @@ add_definitions( ${LLVM_DEFINITIONS} )
 
 include_directories ("${PROJECT_BINARY_DIR}/include/")
 include_directories ("src/libs/GitSHA1")
-add_subdirectory(src/libs/GitSHA1)
-add_subdirectory(src/test)
-add_subdirectory(src/BasicBlockTest)
+add_subdirectory(src)
+
